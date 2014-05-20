@@ -1,5 +1,5 @@
 <?php
-class DSession {
+class HSession {
 
 	public static $SESSION_KEY = 'CONFONESESSIONID';
     private static $AUTHINDEX = 'auth_index';
@@ -7,15 +7,15 @@ class DSession {
 	private $sessionId = null;
 	private $sessionCache = null;
 
-	private static $DSESSION = null;
+	private static $HSESSION = null;
 
 
 	public static function instance() {
-		if (!isset(self::$DSESSION)) {
-			self::$DSESSION = new DSession();
+		if (!isset(self::$HSESSION)) {
+			self::$HSESSION = new HSession();
 		}
 
-		return self::$DSESSION;
+		return self::$HSESSION;
 	}
 
 	private function __construct() {

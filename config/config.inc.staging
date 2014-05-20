@@ -1,9 +1,11 @@
 <?php 
 $base_host = 'https://staging.doc.confone.com';
+
 $account_url = 'https://staging.account.confone.com';
 $security_url = 'https://staging.security.confone.com';
 $content_url = 'https://staging.content.confone.com';
 $www_url = 'https://staging.www.confone.com';
+$doc_url = 'https://staging.doc.confone.com';
 
 
 // =======================================================================================
