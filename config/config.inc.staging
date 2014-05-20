@@ -1,0 +1,33 @@
+<?php 
+$base_host = 'https://staging.doc.confone.com';
+$account_url = 'https://staging.account.confone.com';
+$security_url = 'https://staging.security.confone.com';
+$content_url = 'https://staging.content.confone.com';
+$www_url = 'https://staging.www.confone.com';
+
+
+// =======================================================================================
+// auto include directory information
+$autoload_dirs = array( 'util',
+						'controller',
+						'controller/ajax',
+						'controller/about',
+						'controller/page' );
+
+
+//=======================================================================================
+// Cache server information
+$cache_servers = array (
+'192.168.175.46' => '11211'
+);
+
+
+//=======================================================================================
+// logging information
+// INFO=4, WARN=3, ERROR=2, FATAL=1, NOTHING=0
+$log_level = 4;
+$log_file = '/opt/confone/doc/logs/portal.log';
+
+$access_on = 1;
+$access_log = '/opt/confone/doc/logs/portal_access.log';
+?>
